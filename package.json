@@ -1,0 +1,50 @@
+{
+  "name": "fly-sass-lint",
+  "version": "0.9.9",
+  "description": "Sass-lint plugin for Fly.",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/frantic1048/fly-sass-lint/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frantic1048/fly-sass-lint.git"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "fly",
+    "fly-plugin",
+    "sass",
+    "sass-lint",
+    "lint"
+  ],
+  "scripts": {
+    "pretest": "echo not yet implemented",
+    "test": "#ava"
+  },
+  "author": {
+    "name": "frantic1048",
+    "email": "archer@frantic1048.com",
+    "url": "https://frantic1048.com"
+  },
+  "dependencies": {
+    "sass-lint": "^1.9.0"
+  },
+  "peerDependencies": {
+    "fly": "^1.3.1"
+  },
+  "engines": {
+    "iojs": ">= 1.0.0",
+    "node": ">= 0.12.0"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "eslint": "^3.3.1",
+    "eslint-config-standard": "^6.0.0-beta.3",
+    "eslint-plugin-promise": "^2.0.1",
+    "eslint-plugin-standard": "^2.0.0"
+  }
+}
