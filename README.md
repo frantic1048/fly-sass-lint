@@ -1,4 +1,4 @@
-# fly-pug
+# fly-sass-lint
 
 [![fly badge][fly-bgp]][fly-bg] [![npm badge][npm-bgp]][npm-bg] ![download badge][dl-bgp] [![travisbadge][travis-bgp]][travis-bg] [![license badge][license-bgp]][license-bg]
 

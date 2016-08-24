@@ -1,6 +1,6 @@
 {
   "name": "fly-sass-lint",
-  "version": "0.9.9",
+  "version": "0.9.10",
   "description": "Sass-lint plugin for Fly.",
   "license": "WTFPL",
   "bugs": {
