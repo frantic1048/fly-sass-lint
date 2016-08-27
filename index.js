@@ -10,6 +10,7 @@ LinterError.prototype = Object.create(Error.prototype)
 exports.LinterError = LinterError
 
 module.exports = function plugin () {
+  'use strict'
   this.sasslint = function sassLint (inputConfig) {
     const config = inputConfig || {}
     const options = config.options || {}
