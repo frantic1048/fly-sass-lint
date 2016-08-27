@@ -1,22 +1,22 @@
 import test from 'ava'
-import { readFileSync } from 'fs'
+import { join } from 'path'
 
-import flySassLint from '../'
+import flySassLint, { LinterError } from '../'
 
-const fly = {
-  filter (name, plugin) {
-    this[name] = plugin
+test('throw a linter error', t => {
+  const fly = {
+    unwrap (f) {
+      return f(this.files)
+    },
+    files: [
+      join('fixtures', 'fail.scss')
+    ]
   }
-}
-
-flyPug.call(fly)
-
-test('lint it !', t => {
-  const config = {
-    options: {},
-    configPath: ''
+  const conf = {
+    options: undefined,
+    configPath: join('fixtures', '.sass-lint.yml')
   }
-  t.deepEqual(fly.sasslint(config), {
-    // TODO: let's assert
-  })
+
+  flySassLint.call(fly)
+  t.throws(fly.sasslint.bind(fly, conf), LinterError)
 })

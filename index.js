@@ -7,6 +7,8 @@ function LinterError (message) {
 
 LinterError.prototype = Object.create(Error.prototype)
 
+exports.LinterError = LinterError
+
 module.exports = function plugin () {
   this.sasslint = function sassLint (inputConfig) {
     const config = inputConfig || {}

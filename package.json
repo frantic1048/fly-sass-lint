@@ -22,8 +22,7 @@
     "lint"
   ],
   "scripts": {
-    "pretest": "echo not yet implemented",
-    "test": "#ava"
+    "test": "ava"
   },
   "author": {
     "name": "frantic1048",
